@@ -1,0 +1,22 @@
+#container {
+    padding: 0px;
+    margin: auto;
+    height: 342px;
+    width: 342px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.item {
+    background-color: red;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.changed {
+    background-color: green;
+}
