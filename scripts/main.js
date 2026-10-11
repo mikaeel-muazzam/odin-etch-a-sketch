@@ -23,14 +23,21 @@ function changesColor(ev) {
     targetDiv.classList += " changed";
 }
 
+function buttonClicked() {
+    console.log("Button clicked");
+}
+
 //create starting divs
 const rowLength = 16;
 const divLength = 24;
 const DIV_GAP = 12;
 createDivs(rowLength);
 
-//event listener
+//event listeners
 const items = document.querySelectorAll(".item");
 items.forEach((item) => {
     item.addEventListener("mouseover", changesColor);
 });
+
+const button = document.querySelector("button");
+button.addEventListener("click", buttonClicked);
